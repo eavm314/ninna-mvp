@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Activity, Shield, Clock, AlertTriangle, CheckCircle, XCircle, BarChart3, Settings } from "lucide-react"
+import Link from "next/link"
 
 export function ParentDashboard() {
   const todayActivities = [
@@ -36,16 +37,20 @@ export function ParentDashboard() {
             <p className="text-sm sm:text-base text-gray-600">Monitoreo y configuración para Sofia</p>
           </div>
           <div className="flex items-center gap-3 sm:gap-4">
+          <Link href="/profile">
             <Avatar className="w-10 h-10 sm:w-12 sm:h-12">
               <AvatarFallback className="bg-gradient-to-br from-pink-400 to-purple-500 text-white text-lg sm:text-xl">
                 🦸‍♀️
               </AvatarFallback>
             </Avatar>
-            <Button variant="outline" className="rounded-xl text-sm sm:text-base h-9 sm:h-10">
-              <Settings className="mr-2 h-4 w-4" />
-              <span className="hidden sm:inline">Configurar</span>
-              <span className="sm:hidden">Config</span>
-            </Button>
+            </Link>
+            <Link href="/settings">
+              <Button variant="outline" className="flex rounded-xl text-sm sm:text-base h-9 sm:h-10">
+                <Settings className="mr-2 h-4 w-4" />
+                <span className="hidden sm:inline">Configurar</span>
+                <span className="sm:hidden">Config</span>
+              </Button>
+            </Link>
           </div>
         </div>
 

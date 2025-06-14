@@ -101,6 +101,101 @@ export function SettingsScreen() {
             </CardContent>
           </Card>
 
+          {/* Application Restrictions */}
+          <Card className="nina-card">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Shield className="h-5 w-5" />
+                Restricción de Aplicaciones
+              </CardTitle>
+              <CardDescription>Controlar el acceso a aplicaciones y programas</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="flex items-center justify-between">
+                <Label htmlFor="block-all-apps" className="text-sm font-medium">
+                  Bloquear Todas las Aplicaciones por Defecto
+                </Label>
+                <Switch id="block-all-apps" />
+              </div>
+              <Separator />
+              <div className="space-y-2">
+                <Label className="text-sm font-medium">Aplicaciones Permitidas</Label>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary" className="rounded-xl bg-green-100 text-green-800">
+                    📚 Khan Academy Kids
+                  </Badge>
+                  <Badge variant="secondary" className="rounded-xl bg-green-100 text-green-800">
+                    🎨 Scratch Jr
+                  </Badge>
+                  <Badge variant="secondary" className="rounded-xl bg-green-100 text-green-800">
+                    🧮 Calculadora
+                  </Badge>
+                  <Badge variant="secondary" className="rounded-xl bg-green-100 text-green-800">
+                    📝 Bloc de Notas
+                  </Badge>
+                </div>
+                <Input placeholder="Agregar nueva aplicación..." className="rounded-xl" />
+              </div>
+              <Separator />
+              <div className="space-y-2">
+                <Label className="text-sm font-medium">Aplicaciones Bloqueadas</Label>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="destructive" className="rounded-xl">
+                    🎮 Steam
+                  </Badge>
+                  <Badge variant="destructive" className="rounded-xl">
+                    💬 Discord
+                  </Badge>
+                  <Badge variant="destructive" className="rounded-xl">
+                    📱 TikTok
+                  </Badge>
+                  <Badge variant="destructive" className="rounded-xl">
+                    🎵 Spotify
+                  </Badge>
+                </div>
+                <Input placeholder="Agregar aplicación a bloquear..." className="rounded-xl" />
+              </div>
+              <Separator />
+              <div className="space-y-3">
+                <Label className="text-sm font-medium">Configuración Avanzada</Label>
+                <div className="flex items-center justify-between">
+                  <Label htmlFor="block-installers" className="text-sm font-medium">
+                    Bloquear Instaladores (.exe, .msi)
+                  </Label>
+                  <Switch id="block-installers" defaultChecked />
+                </div>
+                <div className="flex items-center justify-between">
+                  <Label htmlFor="block-browsers" className="text-sm font-medium">
+                    Restringir Navegadores Alternativos
+                  </Label>
+                  <Switch id="block-browsers" />
+                </div>
+                <div className="flex items-center justify-between">
+                  <Label htmlFor="block-system-apps" className="text-sm font-medium">
+                    Bloquear Aplicaciones del Sistema
+                  </Label>
+                  <Switch id="block-system-apps" />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <Label className="text-sm font-medium">Horario de Restricción de Apps</Label>
+                <div className="grid grid-cols-2 gap-2">
+                  <div className="space-y-1">
+                    <Label className="text-xs text-gray-600">Desde</Label>
+                    <Input type="time" defaultValue="22:00" className="rounded-xl" />
+                  </div>
+                  <div className="space-y-1">
+                    <Label className="text-xs text-gray-600">Hasta</Label>
+                    <Input type="time" defaultValue="07:00" className="rounded-xl" />
+                  </div>
+                </div>
+                <p className="text-xs text-gray-600">
+                  Durante este horario, solo las apps educativas estarán disponibles
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
           {/* Notifications */}
           <Card className="nina-card">
             <CardHeader>
