@@ -18,8 +18,6 @@ export function ChildAuth() {
   const [success, setSuccess] = useState("")
 
   // Form state
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
   const [accessCode, setAccessCode] = useState("")
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -28,12 +26,8 @@ export function ChildAuth() {
     setSuccess("")
 
     // Accept any email, password, and access code
-    if (email && password && accessCode) {
+    if (accessCode) {
       setSuccess("¡Bienvenido/a! Accediendo a tu zona segura...")
-
-      // Store user type in localStorage
-      localStorage.setItem("nina-user-type", "child")
-      localStorage.setItem("nina-user-email", email)
 
       // Immediate redirect
       setTimeout(() => {
@@ -62,45 +56,10 @@ export function ChildAuth() {
               <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
             </div>
             <CardTitle className="text-xl sm:text-2xl">¡Hola! Soy NINA 👋</CardTitle>
-            <CardDescription className="text-sm sm:text-base">
-              Para acceder a tu zona segura, necesito que me proporciones algunos datos
-            </CardDescription>
           </CardHeader>
 
           <CardContent className="px-4 sm:px-6">
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="email" className="text-sm flex items-center gap-2">
-                  <Heart className="h-4 w-4 text-pink-500" />
-                  Tu correo electrónico
-                </Label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="rounded-xl h-10 sm:h-11"
-                  placeholder="tu@email.com"
-                  required
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="password" className="text-sm flex items-center gap-2">
-                  <Shield className="h-4 w-4 text-purple-500" />
-                  Tu contraseña secreta
-                </Label>
-                <Input
-                  id="password"
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className="rounded-xl h-10 sm:h-11"
-                  placeholder="Tu contraseña especial"
-                  required
-                />
-              </div>
-
               <div className="space-y-2">
                 <Label htmlFor="access-code" className="text-sm flex items-center gap-2">
                   <span className="text-lg">🔑</span>
@@ -114,9 +73,6 @@ export function ChildAuth() {
                   placeholder="El código que te dio tu papá o mamá"
                   required
                 />
-                <p className="text-xs text-gray-600">
-                  Este código te lo proporcionó tu papá, mamá o tutor para mantenerte seguro/a
-                </p>
               </div>
 
               <Button

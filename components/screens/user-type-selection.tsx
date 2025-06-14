@@ -47,34 +47,11 @@ export function UserTypeSelection() {
               <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto flex items-center justify-center mb-4 shadow-lg">
                 <Users className="h-10 w-10 sm:h-12 sm:w-12 text-white" />
               </div>
-              <CardTitle className="text-2xl sm:text-3xl text-blue-600 mb-2">👨‍👩‍👧‍👦 Soy Padre/Tutor</CardTitle>
+              <CardTitle className="text-2xl sm:text-3xl text-blue-600 mb-2">👨‍👩‍👧‍👦 Cuidador/a</CardTitle>
               <CardDescription className="text-base sm:text-lg">
                 Soy un adulto responsable que quiere configurar y supervisar la navegación segura de mi hijo/a
               </CardDescription>
             </CardHeader>
-            <CardContent className="text-center">
-              <ul className="text-sm sm:text-base text-gray-600 space-y-3 mb-6">
-                <li className="flex items-center gap-2">
-                  <span className="text-blue-500">🛡️</span>
-                  Panel de control parental completo
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-blue-500">⚙️</span>
-                  Configuración de restricciones y filtros
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-blue-500">📊</span>
-                  Monitoreo de actividad en tiempo real
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-blue-500">🔔</span>
-                  Notificaciones de seguridad instantáneas
-                </li>
-              </ul>
-              <Button className="w-full rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-base sm:text-lg h-12 sm:h-14 font-semibold shadow-lg">
-                Continuar como Padre/Tutor
-              </Button>
-            </CardContent>
           </Card>
 
           {/* Child Option */}
@@ -86,34 +63,11 @@ export function UserTypeSelection() {
               <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full mx-auto flex items-center justify-center mb-4 shadow-lg">
                 <Shield className="h-10 w-10 sm:h-12 sm:w-12 text-white" />
               </div>
-              <CardTitle className="text-2xl sm:text-3xl text-purple-600 mb-2">🧒 Soy un Niño/a</CardTitle>
+              <CardTitle className="text-2xl sm:text-3xl text-purple-600 mb-2">🧒 Niño/a</CardTitle>
               <CardDescription className="text-base sm:text-lg">
                 Soy un niño o niña que quiere navegar de forma segura y divertida por internet
               </CardDescription>
             </CardHeader>
-            <CardContent className="text-center">
-              <ul className="text-sm sm:text-base text-gray-600 space-y-3 mb-6">
-                <li className="flex items-center gap-2">
-                  <span className="text-purple-500">🌟</span>
-                  Navegación segura y supervisada
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-purple-500">🎮</span>
-                  Juegos y actividades educativas
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-purple-500">🤖</span>
-                  Asistente virtual amigable (NINA)
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-purple-500">💝</span>
-                  Botón de ayuda emocional siempre disponible
-                </li>
-              </ul>
-              <Button className="w-full rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-base sm:text-lg h-12 sm:h-14 font-semibold shadow-lg">
-                Continuar como Niño/a
-              </Button>
-            </CardContent>
           </Card>
         </div>
       </div>
