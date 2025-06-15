@@ -60,7 +60,7 @@ export function ParentAuth() {
             <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto flex items-center justify-center mb-3 sm:mb-4">
               <Users className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
             </div>
-            <CardTitle className="text-xl sm:text-2xl">Acceso para Padres/Tutores</CardTitle>
+            <CardTitle className="text-xl sm:text-2xl">Acceso para Cuidadores</CardTitle>
             <CardDescription className="text-sm sm:text-base">
               Ingresa tus credenciales para acceder al panel de control parental
             </CardDescription>

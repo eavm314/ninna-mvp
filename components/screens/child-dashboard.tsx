@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -22,6 +23,7 @@ import {
 } from "lucide-react"
 
 export function ChildDashboard() {
+  const router = useRouter()
   const [searchQuery, setSearchQuery] = useState("")
   const [isSearching, setIsSearching] = useState(false)
   const [searchResults, setSearchResults] = useState<any[]>([])
@@ -54,6 +56,7 @@ export function ChildDashboard() {
         type: "Educativo",
         safety: "100% Seguro",
         image: "🐋",
+        siteKey: "nat-geo",
       },
       {
         title: "Monterey Bay Aquarium - Animales Marinos",
@@ -62,6 +65,7 @@ export function ChildDashboard() {
         type: "Educativo",
         safety: "100% Seguro",
         image: "🐠",
+        siteKey: "nat-geo",
       },
       {
         title: "BBC Earth Kids - Océanos",
@@ -71,6 +75,7 @@ export function ChildDashboard() {
         type: "Video Educativo",
         safety: "100% Seguro",
         image: "🌊",
+        siteKey: "nat-geo",
       },
       {
         title: "Smithsonian Ocean Portal",
@@ -79,6 +84,7 @@ export function ChildDashboard() {
         type: "Juego Educativo",
         safety: "100% Seguro",
         image: "🐙",
+        siteKey: "nat-geo",
       },
     ],
     "experimentos divertidos": [
@@ -89,6 +95,7 @@ export function ChildDashboard() {
         type: "Educativo",
         safety: "100% Seguro",
         image: "⚗️",
+        siteKey: "khan-academy",
       },
       {
         title: "NASA Kids Club - Experimentos Espaciales",
@@ -98,6 +105,7 @@ export function ChildDashboard() {
         type: "Educativo",
         safety: "100% Seguro",
         image: "🚀",
+        siteKey: "khan-academy",
       },
       {
         title: "Exploratorium - Ciencia en Casa",
@@ -106,6 +114,7 @@ export function ChildDashboard() {
         type: "Actividad",
         safety: "100% Seguro",
         image: "🔬",
+        siteKey: "khan-academy",
       },
       {
         title: "Cool Science Experiments HQ",
@@ -115,6 +124,7 @@ export function ChildDashboard() {
         type: "Educativo",
         safety: "100% Seguro",
         image: "🌈",
+        siteKey: "khan-academy",
       },
     ],
     "juegos de matemáticas": [
@@ -125,6 +135,7 @@ export function ChildDashboard() {
         type: "Juego Educativo",
         safety: "100% Seguro",
         image: "🎓",
+        siteKey: "khan-academy",
       },
       {
         title: "Prodigy Math Game",
@@ -133,6 +144,7 @@ export function ChildDashboard() {
         type: "Juego",
         safety: "100% Seguro",
         image: "🐉",
+        siteKey: "khan-academy",
       },
       {
         title: "Math Playground",
@@ -141,6 +153,7 @@ export function ChildDashboard() {
         type: "Juego Educativo",
         safety: "100% Seguro",
         image: "🎮",
+        siteKey: "khan-academy",
       },
       {
         title: "Coolmath4Kids",
@@ -149,6 +162,7 @@ export function ChildDashboard() {
         type: "Juego",
         safety: "100% Seguro",
         image: "🧮",
+        siteKey: "khan-academy",
       },
     ],
     "cuentos para niños": [
@@ -159,6 +173,7 @@ export function ChildDashboard() {
         type: "Video Educativo",
         safety: "100% Seguro",
         image: "📚",
+        siteKey: "khan-academy",
       },
       {
         title: "International Children's Digital Library",
@@ -167,6 +182,7 @@ export function ChildDashboard() {
         type: "Educativo",
         safety: "100% Seguro",
         image: "🌍",
+        siteKey: "khan-academy",
       },
       {
         title: "Epic! - Biblioteca Digital para Niños",
@@ -175,6 +191,7 @@ export function ChildDashboard() {
         type: "Educativo",
         safety: "100% Seguro",
         image: "📖",
+        siteKey: "khan-academy",
       },
       {
         title: "Storyberries - Cuentos Ilustrados",
@@ -183,6 +200,7 @@ export function ChildDashboard() {
         type: "Educativo",
         safety: "100% Seguro",
         image: "🍓",
+        siteKey: "khan-academy",
       },
     ],
     "manualidades fáciles": [
@@ -193,6 +211,7 @@ export function ChildDashboard() {
         type: "Actividad",
         safety: "100% Seguro",
         image: "🖍️",
+        siteKey: "khan-academy",
       },
       {
         title: "Red Ted Art - Manualidades para Niños",
@@ -201,6 +220,7 @@ export function ChildDashboard() {
         type: "Actividad",
         safety: "100% Seguro",
         image: "✂️",
+        siteKey: "khan-academy",
       },
       {
         title: "Disney Family - Actividades Creativas",
@@ -209,6 +229,7 @@ export function ChildDashboard() {
         type: "Actividad",
         safety: "100% Seguro",
         image: "🏰",
+        siteKey: "khan-academy",
       },
       {
         title: "Martha Stewart Kids - Proyectos Creativos",
@@ -217,6 +238,7 @@ export function ChildDashboard() {
         type: "Actividad",
         safety: "100% Seguro",
         image: "🎨",
+        siteKey: "khan-academy",
       },
     ],
     "planetas del sistema solar": [
@@ -228,6 +250,7 @@ export function ChildDashboard() {
         type: "Educativo",
         safety: "100% Seguro",
         image: "🪐",
+        siteKey: "nat-geo",
       },
       {
         title: "National Geographic Kids - Espacio",
@@ -236,6 +259,7 @@ export function ChildDashboard() {
         type: "Educativo",
         safety: "100% Seguro",
         image: "🌌",
+        siteKey: "nat-geo",
       },
       {
         title: "Solar System Scope",
@@ -244,6 +268,7 @@ export function ChildDashboard() {
         type: "Simulador",
         safety: "100% Seguro",
         image: "🌍",
+        siteKey: "nat-geo",
       },
       {
         title: "Space Place NASA - Juegos Espaciales",
@@ -252,6 +277,7 @@ export function ChildDashboard() {
         type: "Juego Educativo",
         safety: "100% Seguro",
         image: "🚀",
+        siteKey: "nat-geo",
       },
     ],
   }
@@ -282,6 +308,7 @@ export function ChildDashboard() {
             type: "Educativo",
             safety: "100% Seguro",
             image: "🎓",
+            siteKey: "khan-academy",
           },
           {
             title: "National Geographic Kids",
@@ -290,6 +317,7 @@ export function ChildDashboard() {
             type: "Educativo",
             safety: "100% Seguro",
             image: "🌍",
+            siteKey: "nat-geo",
           },
           {
             title: "Britannica Kids",
@@ -298,6 +326,7 @@ export function ChildDashboard() {
             type: "Educativo",
             safety: "100% Seguro",
             image: "📚",
+            siteKey: "khan-academy",
           },
         ]
       }
@@ -309,6 +338,10 @@ export function ChildDashboard() {
 
   const handleQuickSearch = (query: string) => {
     handleSearch(query)
+  }
+
+  const handleVisitSite = (result: any) => {
+    router.push(`/external-site?site=${result.siteKey}&query=${encodeURIComponent(searchQuery)}`)
   }
 
   return (
@@ -522,6 +555,7 @@ export function ChildDashboard() {
                     </div>
                     <Button
                       size="sm"
+                      onClick={() => handleVisitSite(result)}
                       className="rounded-xl text-xs h-8 px-3 flex-shrink-0 bg-blue-500 hover:bg-blue-600"
                     >
                       Visitar

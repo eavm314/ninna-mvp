@@ -7,13 +7,13 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { Badge } from "@/components/ui/badge"
-import { User, BabyIcon as Child, Upload, Palette } from "lucide-react"
+import { User, BabyIcon as Child, Upload, Palette, Copy, Check } from "lucide-react"
 
 const avatarOptions = ["🦸‍♀️", "🦸‍♂️", "🐱", "🐶", "🦄", "🌟", "🎨", "🚀"]
 
 export function ProfileSetup() {
   const [selectedAvatar, setSelectedAvatar] = useState("🦸‍♀️")
+  const [isCopied, setIsCopied] = useState(false)
 
   return (
     <div className="min-h-screen nina-gradient p-4">
@@ -133,19 +133,29 @@ export function ProfileSetup() {
           </CardContent>
         </Card>
 
-        {/* Preferences */}
+        {/* Device Access Code */}
         <Card className="nina-card">
           <CardHeader className="pb-4">
-            <CardTitle className="text-lg sm:text-xl">Preferencias Iniciales</CardTitle>
-            <CardDescription className="text-sm">Estas se pueden cambiar más tarde en configuración</CardDescription>
+            <CardTitle className="text-lg sm:text-xl">Código de Acceso del Dispositivo</CardTitle>
+            <CardDescription className="text-sm">
+              Usa este código para configurar NINA en los dispositivos de tu hijo/a
+            </CardDescription>
           </CardHeader>
-          <CardContent>
-            <div className="flex flex-wrap gap-2">
-              {["Educativo", "Juegos", "Arte", "Ciencia", "Música", "Deportes"].map((pref) => (
-                <Badge key={pref} variant="secondary" className="rounded-xl text-xs sm:text-sm px-2 sm:px-3 py-1">
-                  {pref}
-                </Badge>
-              ))}
+          <CardContent className="space-y-4">
+            <div className="flex items-center justify-center bg-gradient-to-r from-blue-50 to-cyan-50 border-2 border-blue-200 rounded-2xl p-6">
+              <div className="text-3xl sm:text-4xl font-mono font-bold text-blue-800 tracking-wider mb-4 mr-4">
+                NK7X-M9P2-Q4R8
+              </div>
+                <button
+                  onClick={() => {
+                    navigator.clipboard.writeText("NK7X-M9P2-Q4R8")
+                    setIsCopied(true)
+                    setTimeout(() => setIsCopied(false), 2000)
+                  }}
+                  className="p-2 mb-2 rounded-full bg-blue-500 hover:bg-blue-600 text-white transition-colors duration-200"
+                >
+                  {isCopied ? <Check className="h-5 w-5" /> : <Copy className="h-5 w-5" />}
+                </button>
             </div>
           </CardContent>
         </Card>
