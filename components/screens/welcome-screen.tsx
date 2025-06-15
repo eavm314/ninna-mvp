@@ -45,12 +45,10 @@ export function WelcomeScreen() {
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="max-w-[95vw] sm:max-w-4xl mx-4">
-                  <div className="aspect-video bg-gray-100 rounded-lg flex items-center justify-center">
-                    <div className="text-center space-y-4">
-                      <Play className="h-12 sm:h-16 w-12 sm:w-16 mx-auto text-gray-400" />
-                      <p className="text-gray-600 text-sm sm:text-base">Video de introducción a NINA</p>
-                    </div>
-                  </div>
+                  <video controls className="w-full h-full rounded-lg" poster="/logo.jpeg">
+                    <source src="/ninna.mp4" type="video/mp4" />
+                    Tu navegador no soporta el elemento de video.
+                  </video>
                 </DialogContent>
               </Dialog>
             </div>
@@ -63,10 +61,14 @@ export function WelcomeScreen() {
             <div className="aspect-square bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl flex items-center justify-center">
               <div className="text-center space-y-3 sm:space-y-4">
                 <div className="w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full mx-auto flex items-center justify-center">
-                  <span className="text-3xl sm:text-4xl">🤖</span>
+                  <img
+                    src="/logo.jpeg"
+                    alt="NINNA Logo"
+                    className="size-full sm:w-32 sm:h-32 rounded-full object-cover"
+                  />
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-800">NINA</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-800">NINNA</h3>
                   <p className="text-sm sm:text-base text-gray-600">Tu Asistente Digital</p>
                 </div>
               </div>
