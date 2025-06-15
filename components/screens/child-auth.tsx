@@ -52,7 +52,7 @@ export function ChildAuth() {
 
         <Card className="nina-card">
           <CardHeader className="text-center px-4 sm:px-6">
-            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full mx-auto flex items-center justify-center mb-3 sm:mb-4">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 rounded-full mx-auto flex items-center justify-center mb-3 sm:mb-4">
               <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
             </div>
             <CardTitle className="text-xl sm:text-2xl">¡Hola! Soy NINA 👋</CardTitle>
@@ -78,7 +78,7 @@ export function ChildAuth() {
               <Button
                 type="submit"
                 disabled={loading}
-                className="w-full rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 h-10 sm:h-11 text-sm sm:text-base"
+                className="w-full rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 h-10 sm:h-11 text-sm sm:text-base"
               >
                 {loading ? "Verificando..." : "¡Entrar a mi zona segura! 🚀"}
               </Button>

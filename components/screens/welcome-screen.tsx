@@ -30,7 +30,7 @@ export function WelcomeScreen() {
             <Link href="/user-type">
               <Button
                 size="lg"
-                className="bg-white text-purple-600 hover:bg-gray-100 rounded-2xl px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg font-semibold shadow-lg w-full sm:w-auto"
+                className="bg-white text-blue-600 hover:bg-gray-100 rounded-2xl px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg font-semibold shadow-lg w-full sm:w-auto"
               >
                 Comenzar Aventura
               </Button>
@@ -58,9 +58,9 @@ export function WelcomeScreen() {
         {/* Right Panel - Character Avatar */}
         <div className="flex justify-center order-1 lg:order-2">
           <Card className="nina-card p-4 sm:p-6 lg:p-8 max-w-sm sm:max-w-md w-full">
-            <div className="aspect-square bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl flex items-center justify-center">
+            <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center">
               <div className="text-center space-y-3 sm:space-y-4">
-                <div className="w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full mx-auto flex items-center justify-center">
+                <div className="w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto flex items-center justify-center">
                   <img
                     src="/logo.jpeg"
                     alt="NINNA Logo"

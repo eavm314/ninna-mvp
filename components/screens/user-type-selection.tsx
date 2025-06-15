@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowLeft, Users, Shield } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
@@ -32,9 +32,6 @@ export function UserTypeSelection() {
         <div className="text-center text-white mb-6 sm:mb-8">
           <div className="text-4xl sm:text-6xl mb-4">🤔</div>
           <h1 className="text-3xl sm:text-4xl font-bold mb-3">¡Hola! ¿Quién eres?</h1>
-          <p className="text-lg sm:text-xl opacity-90">
-            Elige tu perfil para comenzar tu experiencia personalizada con NINA
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
@@ -56,14 +53,14 @@ export function UserTypeSelection() {
 
           {/* Child Option */}
           <Card
-            className="nina-card cursor-pointer hover:scale-105 transition-all duration-300 border-2 hover:border-purple-300 hover:shadow-2xl"
+            className="nina-card cursor-pointer hover:scale-105 transition-all duration-300 border-2 hover:border-blue-300 hover:shadow-2xl"
             onClick={() => handleUserTypeSelect("child")}
           >
             <CardHeader className="text-center pb-4">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full mx-auto flex items-center justify-center mb-4 shadow-lg">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full mx-auto flex items-center justify-center mb-4 shadow-lg">
                 <Shield className="h-10 w-10 sm:h-12 sm:w-12 text-white" />
               </div>
-              <CardTitle className="text-2xl sm:text-3xl text-purple-600 mb-2">🧒 Niño/a</CardTitle>
+              <CardTitle className="text-2xl sm:text-3xl text-blue-600 mb-2">🧒 Niño/a</CardTitle>
               <CardDescription className="text-base sm:text-lg">
                 Soy un niño o niña que quiere navegar de forma segura y divertida por internet
               </CardDescription>
