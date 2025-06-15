@@ -16,7 +16,7 @@ export function WelcomeScreen() {
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold tracking-tight">
               ¡Hola! Soy{" "}
               <span className="inline-flex items-center gap-1 sm:gap-2">
-                NINA
+                NINNA
                 <Sparkles className="h-6 w-6 sm:h-8 sm:w-8 lg:h-12 lg:w-12" />
               </span>
             </h1>

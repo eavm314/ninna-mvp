@@ -9,8 +9,8 @@ import { LayoutWrapper } from "@/components/layout-wrapper"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NINA - Safe Navigation for Children",
-  description: "Intelligent Safe Navigation and Digital Support Platform for Children",
+  title: "NINNA",
+  description: "Navegación Inteligente para Niños, Niñas y Adultos",
     generator: 'v0.dev'
 }
 
