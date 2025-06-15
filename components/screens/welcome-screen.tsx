@@ -57,22 +57,12 @@ export function WelcomeScreen() {
 
         {/* Right Panel - Character Avatar */}
         <div className="flex justify-center order-1 lg:order-2">
-          <Card className="nina-card p-4 sm:p-6 lg:p-8 max-w-sm sm:max-w-md w-full">
-            <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center">
-              <div className="text-center space-y-3 sm:space-y-4">
-                <div className="w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto flex items-center justify-center">
-                  <img
-                    src="/logo.jpeg"
-                    alt="NINNA Logo"
-                    className="size-full sm:w-32 sm:h-32 rounded-full object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-800">NINNA</h3>
-                  <p className="text-sm sm:text-base text-gray-600">Tu Asistente Digital</p>
-                </div>
-              </div>
-            </div>
+          <Card className="max-w-80 overflow-hidden">
+            <img
+              src="/logo2.png"
+              alt="NINNA Logo"
+              className="size-full object-cover"
+            />
           </Card>
         </div>
       </div>
