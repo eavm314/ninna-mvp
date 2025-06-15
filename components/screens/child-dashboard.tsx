@@ -356,7 +356,7 @@ export function ChildDashboard() {
               </AvatarFallback>
             </Avatar>
             <div>
-              <h1 className="text-2xl sm:text-3xl font-bold">¡Hola, Sofia! 👋</h1>
+              <h1 className="text-2xl sm:text-3xl font-bold">¡Hola, Laura! 👋</h1>
               <p className="text-base sm:text-lg opacity-90">¿Qué quieres descubrir hoy?</p>
             </div>
           </div>
@@ -378,7 +378,7 @@ export function ChildDashboard() {
           <CardHeader className="pb-3 sm:pb-4">
             <CardTitle className="flex items-center gap-2 text-xl sm:text-2xl text-center justify-center">
               <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 text-blue-500" />
-              Buscador Inteligente NINNA
+              Habla con NINNA
               <Globe className="h-5 w-5 sm:h-6 sm:w-6 text-blue-500" />
             </CardTitle>
             <CardDescription className="text-base sm:text-lg text-center">
